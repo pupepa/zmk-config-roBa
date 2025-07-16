@@ -91,10 +91,10 @@
 
         SYMBOLS {
             bindings = <
-&kp TILDE  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp CARET  &kp AMPERSAND  &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp GRAVE  &trans  &trans    &trans      &trans       &trans      &trans  &trans     &kp PLUS       &trans     &kp LEFT_BRACE        &kp RIGHT_BRACE
-&trans     &trans  &trans    &trans      &trans       &trans      &trans  &trans     &kp EQUAL      &trans     &kp LEFT_BRACKET      &kp RIGHT_BRACE
-&trans     &trans  &trans    &trans      &trans       &trans      &trans  &trans                                                     &kp BACKSLASH
+&kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp CARET  &kp AMPERSAND  &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp TILDE        &trans  &trans    &trans      &trans       &trans      &trans  &trans     &kp PLUS       &trans     &kp LEFT_BRACE        &kp RIGHT_BRACE
+&kp GRAVE        &trans  &trans    &trans      &trans       &trans      &trans  &trans     &kp EQUAL      &trans     &kp LEFT_BRACKET      &kp RIGHT_BRACE
+&trans           &trans  &trans    &trans      &trans       &trans      &trans  &trans                                                     &kp BACKSLASH
             >;
         };
 
@@ -109,10 +109,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &trans  &kp LG(TAB)              &trans                       &trans          &trans    &trans        &trans           &trans
-&kp HOME        &trans                  &trans  &trans                   &kp END  &trans      &trans  &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans  &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans          &trans    &trans        &trans           &trans
-&trans          &trans                  &trans  &trans                   &trans   &trans      &trans  &trans                                                   &trans
+&kp ESCAPE      &kp LC(LS(TAB))         &trans  &kp LG(TAB)              &kp LC(T)                      &trans          &trans    &trans        &trans           &trans
+&kp HOME        &trans                  &trans  &trans                   &kp END    &trans      &trans  &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans  &kp LG(LS(RIGHT_ARROW))  &trans     &trans      &trans  &trans          &trans    &trans        &trans           &trans
+&trans          &trans                  &trans  &trans                   &trans     &trans      &trans  &trans                                                   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
