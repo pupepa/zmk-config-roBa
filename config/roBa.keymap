@@ -93,7 +93,7 @@
             bindings = <
 &kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp CARET  &kp AMPERSAND  &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp TILDE        &trans  &trans    &trans      &trans       &trans      &trans  &trans     &kp PLUS       &trans     &kp LEFT_BRACE        &kp RIGHT_BRACE
-&kp GRAVE        &trans  &trans    &trans      &trans       &trans      &trans  &trans     &kp EQUAL      &trans     &kp LEFT_BRACKET      &kp RIGHT_BRACE
+&kp GRAVE        &trans  &trans    &trans      &trans       &trans      &trans  &trans     &kp EQUAL      &trans     &kp LEFT_BRACKET      &kp RIGHT_BRACKET
 &trans           &trans  &trans    &trans      &trans       &trans      &trans  &trans                                                     &kp BACKSLASH
             >;
         };
