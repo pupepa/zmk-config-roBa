@@ -102,10 +102,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                        &kp Y        &kp U  &lt 4 I    &kp O      &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G        &lt 5 TAB                        &kp MINUS      &kp H        &kp J  &kp K      &kp L      &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp TAB                          &kp SEMI       &kp N        &kp M  &mkp LCLK  &mkp RCLK  &mt RIGHT_SHIFT SLASH
-&kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &lt_to_layer_0 1 LANGUAGE_2  &lt 2 SPACE  &lt_to_layer_0 3 LANGUAGE_1      &kp BACKSPACE  &lt 1 ENTER                               &kp RIGHT_WIN
+&kp Q             &kp W         &kp E         &kp R                        &kp T                                                        &kp Y        &kp U  &lt 4 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F                        &kp G        &lt 5 TAB                        &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp TAB                          &kp SEMI       &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &lt_to_layer_0 1 LANGUAGE_2  &lt 2 SPACE  &lt_to_layer_0 3 LANGUAGE_1      &kp BACKSPACE  &lt 1 ENTER                             &kp RIGHT_WIN
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -114,8 +114,8 @@
         SYMBOLS {
             bindings = <
 &kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR        &kp PERCENT                               &kp CARET  &kp AMPERSAND  &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp TILDE        &trans  &trans    &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans      &kp UNDER  &kp PLUS   &kp PIPE       &kp LESS_THAN  &kp GT                &kp DOUBLE_QUOTES
-&kp GRAVE        &trans  &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans      &kp COLON  &kp EQUAL  &kp BACKSLASH  &kp COMMA      &kp DOT               &kp QUESTION
+&kp TILDE        &trans  &trans    &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans      &kp UNDER  &kp PLUS   &kp PIPE       &trans         &trans                &kp DOUBLE_QUOTES
+&kp GRAVE        &trans  &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans      &kp COLON  &kp EQUAL  &kp BACKSLASH  &kp LESS_THAN  &kp GREATER_THAN      &kp QUESTION
 &trans           &trans  &trans    &trans            &trans             &trans      &trans     &trans                                                         &trans
             >;
         };
@@ -124,7 +124,7 @@
             bindings = <
 &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5                      &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
 &trans           &trans           &trans           &trans           &trans           &trans      &trans  &trans           &trans           &trans           &trans           &trans
-&trans           &trans           &trans           &trans           &trans           &trans      &trans  &trans           &trans           &trans           &trans           &trans
+&trans           &trans           &trans           &trans           &trans           &trans      &trans  &trans           &trans           &mkp MB1         &mkp MB2         &trans
 &trans           &trans           &trans           &trans           &trans           &trans      &trans  &trans                                                              &trans
             >;
         };
@@ -133,7 +133,7 @@
             bindings = <
 &kp ESCAPE  &trans         &trans  &trans             &kp LC(T)                      &trans          &trans    &trans        &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))
 &trans      &kp LG(SPACE)  &trans  &kp LC(LG(SPACE))  &trans     &trans      &trans  &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT_ARROW       &trans
-&trans      &trans         &trans  &kp LG(LS(V))      &trans     &trans      &trans  &trans          &trans    &trans        &trans                &trans
+&trans      &trans         &trans  &kp LG(LS(V))      &trans     &trans      &trans  &trans          &trans    &mkp MB1      &mkp MB2              &trans
 &trans      &trans         &trans  &trans             &trans     &trans      &trans  &trans                                                        &trans
             >;
 
