@@ -67,12 +67,22 @@
 
         right_bracket {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <19 20>;
+            key-positions = <31 32>;
         };
 
         left_bracket {
             bindings = <&kp LEFT_BRACKET>;
+            key-positions = <31 30>;
+        };
+
+        left_parenthesis {
+            bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <18 19>;
+        };
+
+        right_parenthesis {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <19 20>;
         };
     };
 
@@ -120,10 +130,10 @@
 
         default_layer {
             bindings = <
-&lt 5 Q           &kp W         &kp E         &kp R                   &kp T                                                        &kp Y        &kp U  &lt 4 I    &kp O    &kp P
-&mt LCTRL A       &kp S         &kp D         &kp F                   &kp G             &kp ESC                     &kp MINUS      &kp H        &kp J  &kp K      &kp L    &mt RCTRL SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B             &mkp MB1                    &kp SEMI       &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &lt_to_layer_0 1 LANG2  &lt 2 LANGUAGE_1  &lt_to_layer_0 3 SPACE      &kp BACKSPACE  &lt 1 ENTER                             &kp RIGHT_WIN
+&lt 5 Q           &kp W         &kp E         &kp R                   &kp T                                                        &kp Y        &kp U            &lt 4 I              &kp O          &kp P
+&mt LCTRL A       &kp S         &kp D         &kp F                   &kp G             &kp ESC                     &kp MINUS      &kp H        &kp J            &kp K                &kp L          &mt RCTRL SQT
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B             &mkp MB1                    &kp SEMI       &kp N        &mt RIGHT_GUI M  &mt RIGHT_ALT COMMA  &mt RCTRL DOT  &mt RIGHT_SHIFT SLASH
+&kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &lt_to_layer_0 1 LANG2  &lt 2 LANGUAGE_1  &lt_to_layer_0 3 SPACE      &kp BACKSPACE  &lt 1 ENTER                                                       &kp RIGHT_WIN
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -131,10 +141,10 @@
 
         SYMBOLS {
             bindings = <
-&kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR        &kp PERCENT                                 &kp CARET  &kp AMPERSAND  &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp TILDE        &trans  &trans    &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans        &kp UNDER  &kp PLUS   &kp PIPE       &trans         &trans                &kp DOUBLE_QUOTES
-&kp GRAVE        &trans  &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mkp MB2      &kp COLON  &kp EQUAL  &kp BACKSLASH  &kp LESS_THAN  &kp GREATER_THAN      &kp QUESTION
-&trans           &trans  &trans    &trans            &trans             &trans        &trans     &trans                                                         &trans
+&kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR        &kp PERCENT                                 &kp CARET       &kp AMPERSAND  &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp TILDE        &trans  &trans    &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans        &kp UNDER  &kp PLUS        &kp PIPE       &trans         &trans                &kp DOUBLE_QUOTES
+&kp GRAVE        &trans  &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mkp MB2      &kp COLON  &kp EQUAL       &kp BACKSLASH  &kp LESS_THAN  &kp GREATER_THAN      &kp QUESTION
+&trans           &trans  &trans    &kp LANGUAGE_2    &trans             &trans        &trans     &kp LANGUAGE_1                                                      &trans
             >;
         };
 
