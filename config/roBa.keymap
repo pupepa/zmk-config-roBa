@@ -130,10 +130,10 @@
 
         default_layer {
             bindings = <
-&lt 5 Q           &kp W         &kp E         &kp R                   &kp T                                                        &kp Y        &kp U            &lt 4 I              &kp O          &kp P
-&mt LCTRL A       &kp S         &kp D         &kp F                   &kp G             &kp ESC                     &kp MINUS      &kp H        &kp J            &kp K                &kp L          &mt RCTRL SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B             &mkp MB1                    &kp SEMI       &kp N        &mt RIGHT_GUI M  &mt RIGHT_ALT COMMA  &mt RCTRL DOT  &mt RIGHT_SHIFT SLASH
-&kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &lt_to_layer_0 1 LANG2  &lt 2 LANGUAGE_1  &lt_to_layer_0 3 SPACE      &kp BACKSPACE  &lt 1 ENTER                                                       &kp RIGHT_WIN
+&lt 5 Q           &kp W         &kp E         &kp R          &kp T                                                                   &kp Y                   &kp U            &lt 4 I              &kp O          &kp P
+&mt LCTRL A       &kp S         &kp D         &kp F          &kp G                 &mkp MB2                    &kp MINUS             &kp H                   &kp J            &kp K                &kp L          &mt RCTRL SQT
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V          &kp B                 &mkp MB1                    &kp SEMI              &kp N                   &mt RIGHT_GUI M  &mt RIGHT_ALT COMMA  &mt RCTRL DOT  &mt RIGHT_SHIFT SLASH
+&kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &kp BACKSPACE  &lt_to_layer_0 1 TAB  &lt_to_layer_0 2 SPACE      &lt_to_layer_0 2 ESC  &lt_to_layer_0 1 ENTER                                                       &kp RIGHT_WIN
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -150,10 +150,10 @@
 
         NUM {
             bindings = <
-&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5                      &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
-&trans           &trans           &trans           &trans           &trans           &trans      &trans  &trans           &trans           &trans           &trans           &trans
-&trans           &trans           &trans           &trans           &trans           &trans      &trans  &trans           &trans           &trans           &trans           &trans
-&trans           &trans           &trans           &trans           &trans           &trans      &trans  &trans                                                              &trans
+&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4    &kp KP_NUMBER_5                      &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9       &kp KP_NUMBER_0
+&trans           &trans           &trans           &kp LC(LG(SPACE))  &trans           &trans      &trans  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT             &trans
+&trans           &trans           &trans           &kp LG(LS(V))      &trans           &trans      &trans  &trans           &trans           &trans           &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))
+&trans           &trans           &trans           &trans             &trans           &trans      &trans  &trans                                                                   &trans
             >;
         };
 
