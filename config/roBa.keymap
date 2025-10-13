@@ -142,10 +142,10 @@
 
         SYMBOLS {
             bindings = <
-&kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                              &kp CARET       &kp AMPERSAND  &kp ASTRK  &trans  &kp BACKSPACE
-&kp TILDE        &trans  &trans    &trans      &trans          &trans        &kp UNDER  &kp PLUS        &kp PIPE       &trans     &trans  &trans
-&kp GRAVE        &trans  &trans    &trans      &trans          &mkp MB2      &kp COLON  &kp EQUAL       &kp BACKSLASH  &trans     &trans  &trans
-&trans           &trans  &trans    &trans      &kp LANGUAGE_2  &trans        &trans     &kp LANGUAGE_1                                    &trans
+&kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                              &kp CARET       &kp AMPERSAND  &kp ASTRK  &kp LEFT_BRACE        &kp RIGHT_BRACE
+&kp TILDE        &trans  &trans    &trans      &trans          &trans        &kp UNDER  &kp PLUS        &kp PIPE       &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp GRAVE        &trans  &trans    &trans      &trans          &mkp MB2      &kp COLON  &kp EQUAL       &kp BACKSLASH  &trans     &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&trans           &trans  &trans    &trans      &kp LANGUAGE_2  &trans        &trans     &kp LANGUAGE_1                                                  &trans
             >;
         };
 
