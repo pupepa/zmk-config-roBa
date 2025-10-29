@@ -140,14 +140,14 @@
             max-tap-interrupt-ms = <250>;
         };
 
-        ime_toggle: ime_toggle {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp SPACE>
-                , <&macro_release &kp LCTRL>
-                ;
+        sft_ime: shift_ime_toggle {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHIFT_IME_TOGGLE";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            bindings = <&kp>, <&ime_toggle>;
         };
     };
 
