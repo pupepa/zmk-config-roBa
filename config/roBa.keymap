@@ -103,11 +103,13 @@
         ime_toggle: ime_toggle {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp SPACE>
-                , <&macro_release &kp LCTRL>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_release>,
+                <&kp LCTRL>;
         };
     };
 
@@ -156,10 +158,10 @@
 
         default_layer {
             bindings = <
-&lt 5 Q    &kp W         &kp E         &kp R                 &kp T                                                                   &kp Y                   &kp U            &lt 4 I              &kp O          &kp P
-&kp A      &kp S         &kp D         &kp F                 &kp G                 &kp LC(T)                   &kp MINUS             &kp H                   &kp J            &kp K                &kp L          &kp BACKSPACE
-&kp Z      &kp X         &kp C         &kp V                 &kp B                 &mkp MB1                    &mt SEMI GLOBE        &kp N                   &mt RIGHT_GUI M  &mt RIGHT_ALT COMMA  &mt RCTRL DOT  &mt RIGHT_SHIFT SLASH
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &mt LEFT_SHIFT GLOBE  &lt_to_layer_0 1 TAB  &lt_to_layer_0 2 SPACE      &lt_to_layer_0 2 ESC  &lt_to_layer_0 1 ENTER                                                       &kp EXPOSE
+&lt 5 Q      &kp W         &kp E         &kp R                    &kp T                                                                   &kp Y                   &kp U            &lt 4 I              &kp O          &kp P
+&mt LCTRL A  &kp S         &kp D         &kp F                    &kp G                 &kp LC(T)                   &kp MINUS             &kp H                   &kp J            &kp K                &kp L          &kp BACKSPACE
+&kp Z        &kp X         &kp C         &kp V                    &kp B                 &mkp MB1                    &kp SEMI              &kp N                   &mt RIGHT_GUI M  &mt RIGHT_ALT COMMA  &mt RCTRL DOT  &mt RIGHT_SHIFT SLASH
+&kp LCTRL    &kp LEFT_ALT  &kp LEFT_WIN  &mt LEFT_SHIFT CAPSLOCK  &lt_to_layer_0 1 TAB  &lt_to_layer_0 2 SPACE      &lt_to_layer_0 2 ESC  &lt_to_layer_0 1 ENTER                                                       &kp EXPOSE
             >;
 
             sensor-bindings = <&scroll_up_down>;
