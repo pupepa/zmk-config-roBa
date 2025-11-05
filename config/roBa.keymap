@@ -161,7 +161,7 @@
 &lt 5 Q      &kp W         &kp E         &kp R                    &kp T                                                                   &kp Y                   &kp U            &lt 4 I              &kp O          &kp P
 &mt LCTRL A  &kp S         &kp D         &kp F                    &kp G                 &kp LC(T)                   &kp MINUS             &kp H                   &kp J            &kp K                &kp L          &kp BACKSPACE
 &kp Z        &kp X         &kp C         &kp V                    &kp B                 &mkp MB1                    &kp SINGLE_QUOTE      &kp N                   &mt RIGHT_GUI M  &mt RIGHT_ALT COMMA  &mt RCTRL DOT  &mt RIGHT_SHIFT SLASH
-&kp LCTRL    &kp LEFT_ALT  &kp LEFT_WIN  &mt LEFT_SHIFT CAPSLOCK  &lt_to_layer_0 1 TAB  &lt_to_layer_0 2 SPACE      &lt_to_layer_0 2 ESC  &lt_to_layer_0 1 ENTER                                                       &kp EXPOSE
+&kp LCTRL    &kp LEFT_ALT  &kp LEFT_WIN  &mt LEFT_SHIFT CAPSLOCK  &lt_to_layer_0 1 TAB  &lt_to_layer_0 2 SPACE      &lt_to_layer_0 2 ESC  &lt_to_layer_0 1 ENTER                                                       &mkp MB1
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -172,7 +172,7 @@
 &kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                                      &kp CARET       &kp AMPERSAND  &kp ASTRK      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES
 &kp TILDE        &trans  &trans    &trans      &trans          &trans        &kp UNDER          &kp PLUS        &kp COLON      &kp PIPE       &mkp MB1          &mkp MB2
 &kp GRAVE        &trans  &trans    &trans      &trans          &mkp MB2      &kp DOUBLE_QUOTES  &kp KP_EQUAL    &kp SEMICOLON  &kp BACKSLASH  &trans            &trans
-&trans           &trans  &trans    &trans      &kp LANGUAGE_2  &trans        &trans             &kp LANGUAGE_1                                                  &trans
+&trans           &trans  &trans    &trans      &kp LANGUAGE_2  &trans        &trans             &kp LANGUAGE_1                                                  &kp EXPOSE
             >;
         };
 
