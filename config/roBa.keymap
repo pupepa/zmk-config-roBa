@@ -157,7 +157,7 @@
           #binding-cells = <2>;
           flavor = "tap-preferred";        // タップ優先。ホールド長押ししてから判断
           tapping-term-ms = <200>;         // タップとホールドの切り替え時間
-          bindings = <&mo 1>, <&mkp LCLK>; // ホールド時：レイヤー１有効、タップ時：左クリック
+          bindings = <&mo 1>, <&mkp MB1>; // ホールド時：レイヤー１有効、タップ時：左クリック
         };
     };
 
