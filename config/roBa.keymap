@@ -151,13 +151,14 @@
             quick-tap-ms = <125>;
             bindings = <&kp>, <&ime_toggle>;
         };
-    
+
         layer_mouse_ht: layer_mouse_hold_tap {
-          compatible = "zmk,behavior-hold-tap";
-          #binding-cells = <2>;
-          flavor = "tap-preferred";        // タップ優先。ホールド長押ししてから判断
-          tapping-term-ms = <200>;         // タップとホールドの切り替え時間
-          bindings = <&mo>, <&mkp>; // ホールド時：レイヤー１有効、タップ時：左クリック
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";        // タップ優先。ホールド長押ししてから判断
+            tapping-term-ms = <200>;         // タップとホールドの切り替え時間
+            bindings = <&mo>, <&mkp>;
+ // ホールド時：レイヤー１有効、タップ時：左クリック
         };
     };
 
@@ -166,10 +167,10 @@
 
         default_layer {
             bindings = <
-&lt 5 Q      &kp W         &kp E         &kp R                 &kp T                                                                   &kp Y                   &kp U            &lt 4 I              &kp O          &kp P
-&mt LCTRL A  &kp S         &kp D         &kp F                 &kp G                 &kp LC(T)                   &kp MINUS             &kp H                   &kp J            &kp K                &kp L          &kp BACKSPACE
-&kp Z        &kp X         &kp C         &kp V                 &kp B                 &mkp MB1                    &kp SINGLE_QUOTE      &kp N                   &mt RIGHT_GUI M  &mt RIGHT_ALT COMMA  &mt RCTRL DOT  &mt RIGHT_SHIFT SLASH
-&kp LCTRL    &kp LEFT_ALT  &kp LEFT_WIN  &mt LEFT_SHIFT LANG1  &layer_mouse_ht 1 MB1  &lt_to_layer_0 2 SPACE      &lt_to_layer_0 2 ESC  &lt_to_layer_0 1 ENTER                                                       &mkp MB1
+&lt 5 Q      &kp W         &kp E         &kp R                 &kp T                                                                     &kp Y                   &kp U            &lt 4 I              &kp O          &kp P
+&mt LCTRL A  &kp S         &kp D         &kp F                 &kp G                   &kp LC(T)                   &kp MINUS             &kp H                   &kp J            &kp K                &kp L          &kp BACKSPACE
+&kp Z        &kp X         &kp C         &kp V                 &kp B                   &mkp MB1                    &kp SINGLE_QUOTE      &kp N                   &mt RIGHT_GUI M  &mt RIGHT_ALT COMMA  &mt RCTRL DOT  &mt RIGHT_SHIFT SLASH
+&kp LCTRL    &kp LEFT_ALT  &kp LEFT_WIN  &mt LEFT_SHIFT LANG2  &lt_to_layer_0 1 LANG1  &lt_to_layer_0 2 SPACE      &lt_to_layer_0 2 ESC  &lt_to_layer_0 1 ENTER                                                       &mkp MB1
             >;
 
             sensor-bindings = <&scroll_up_down>;
