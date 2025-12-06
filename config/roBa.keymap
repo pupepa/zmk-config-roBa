@@ -158,7 +158,8 @@
             flavor = "tap-preferred";        // タップ優先。ホールド長押ししてから判断
             tapping-term-ms = <200>;         // タップとホールドの切り替え時間
             bindings = <&mo>, <&mkp>;
- // ホールド時：レイヤー１有効、タップ時：左クリック
+
+            // ホールド時：レイヤー１有効、タップ時：左クリック
         };
     };
 
@@ -169,7 +170,7 @@
             bindings = <
 &lt 5 Q      &kp W         &kp E         &kp R                 &kp T                                                                     &kp Y                   &kp U            &lt 4 I              &kp O          &kp P
 &mt LCTRL A  &kp S         &kp D         &kp F                 &kp G                   &kp LC(T)                   &kp MINUS             &kp H                   &kp J            &kp K                &kp L          &kp BACKSPACE
-&kp Z        &kp X         &kp C         &kp V                 &kp B                   &mkp MB1                    &kp SINGLE_QUOTE      &kp N                   &mt RIGHT_GUI M  &mt RIGHT_ALT COMMA  &mt RCTRL DOT  &mt RIGHT_SHIFT SLASH
+&kp Z        &kp X         &kp C         &kp V                 &kp B                   &mkp MB1                    &trans                &kp N                   &mt RIGHT_GUI M  &mt RIGHT_ALT COMMA  &mt RCTRL DOT  &mt RIGHT_SHIFT SLASH
 &kp LCTRL    &kp LEFT_ALT  &kp LEFT_WIN  &mt LEFT_SHIFT LANG2  &lt_to_layer_0 1 LANG1  &lt_to_layer_0 2 SPACE      &lt_to_layer_0 2 ESC  &lt_to_layer_0 1 ENTER                                                       &mkp MB1
             >;
 
@@ -178,19 +179,19 @@
 
         SYMBOLS {
             bindings = <
-&kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                                      &kp CARET       &kp AMPERSAND  &kp ASTRK      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES
-&kp TILDE        &trans  &trans    &trans      &trans          &trans        &kp UNDER          &kp PLUS        &kp COLON      &kp PIPE       &mkp MB1          &mkp MB2
-&kp GRAVE        &trans  &trans    &trans      &trans          &mkp MB2      &kp DOUBLE_QUOTES  &kp KP_EQUAL    &kp SEMICOLON  &kp BACKSLASH  &trans            &trans
-&trans           &trans  &trans    &trans      &kp LANGUAGE_2  &trans        &trans             &kp LANGUAGE_1                                                  &kp EXPOSE
+&kp EXCLAMATION  &kp AT         &kp HASH  &kp DOLLAR  &kp PERCENT                           &kp CARET     &kp AMPERSAND  &kp ASTRK      &trans            &trans
+&kp TILDE        &kp PIPE       &trans    &trans      &trans       &trans        &kp UNDER  &kp PLUS      &kp COLON      &trans         &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES
+&kp GRAVE        &kp BACKSLASH  &trans    &trans      &trans       &mkp MB2      &trans     &kp KP_EQUAL  &kp SEMICOLON  &kp LESS_THAN  &kp GT            &kp QUESTION
+&trans           &trans         &trans    &trans      &trans       &trans        &trans     &trans                                                        &kp EXPOSE
             >;
         };
 
         NUM {
             bindings = <
-&kp KP_NUMBER_1       &kp KP_NUMBER_2       &kp KP_NUMBER_3  &kp KP_NUMBER_4    &kp KP_NUMBER_5                            &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
-&trans                &trans                &trans           &kp LC(LG(SPACE))  &trans           &trans         &trans     &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &trans
-&trans                &trans                &trans           &kp LG(LS(V))      &trans           &trans         &trans     &trans           &trans           &trans           &trans           &trans
-&kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))  &trans           &trans             &trans           &kp LANG2      &kp LANG1  &trans                                                              &trans
+&kp KP_NUMBER_1       &kp KP_NUMBER_2       &kp KP_NUMBER_3  &kp KP_NUMBER_4    &kp KP_NUMBER_5                      &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
+&trans                &trans                &trans           &kp LC(LG(SPACE))  &trans           &trans      &trans  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &trans
+&trans                &trans                &trans           &kp LG(LS(V))      &trans           &trans      &trans  &trans           &trans           &trans           &trans           &trans
+&kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))  &trans           &trans             &trans           &trans      &trans  &trans                                                              &trans
             >;
         };
 
