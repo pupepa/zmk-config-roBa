@@ -115,12 +115,10 @@
         ascii: ascii {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-
             bindings =
                 <&kp LANG2>,
                 <&macro_wait_time 30>,
-                <&macro_param_1to1>,
-                <&kp MACRO_PLACEHOLDER>;
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
         };
     };
 
@@ -190,10 +188,10 @@
 
         SYMBOLS {
             bindings = <
-&kp EXCLAMATION  &kp AT         &kp HASH  &kp DOLLAR        &kp PERCENT                                 &kp CARET     &kp AMPERSAND  &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp TILDE        &kp PIPE       &trans    &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans        &kp UNDER  &kp PLUS      &kp COLON      &trans         &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES
-&kp GRAVE        &kp BACKSLASH  &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mkp MB2      &trans     &kp KP_EQUAL  &kp SEMICOLON  &kp LESS_THAN  &kp GT                &kp QUESTION
-&trans           &trans         &trans    &trans            &trans             &trans        &trans     &trans                                                            &kp EXPOSE
+&ascii EXCLAMATION  &ascii AT         &ascii HASH  &ascii DOLLAR        &ascii PERCENT                                    &ascii CARET     &ascii AMPERSAND  &ascii ASTRK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&ascii TILDE        &ascii PIPE       &trans       &ascii LEFT_BRACE    &ascii RIGHT_BRACE    &trans        &ascii UNDER  &ascii PLUS      &ascii COLON      &trans            &ascii SINGLE_QUOTE   &ascii DOUBLE_QUOTES
+&ascii GRAVE        &ascii BACKSLASH  &trans       &ascii LEFT_BRACKET  &ascii RIGHT_BRACKET  &mkp MB2      &trans        &ascii KP_EQUAL  &ascii SEMICOLON  &ascii LESS_THAN  &ascii GT             &ascii QUESTION
+&trans              &trans            &trans       &trans               &trans                &trans        &trans        &trans                                                                     &kp EXPOSE
             >;
         };
 
