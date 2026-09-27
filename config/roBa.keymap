@@ -111,6 +111,17 @@
                 <&macro_release>,
                 <&kp LCTRL>;
         };
+
+        ascii: ascii {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+
+            bindings =
+                <&kp LANG2>,
+                <&macro_wait_time 30>,
+                <&macro_param_1to1>,
+                <&kp MACRO_PLACEHOLDER>;
+        };
     };
 
     behaviors {
